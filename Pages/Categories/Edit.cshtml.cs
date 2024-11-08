@@ -8,23 +8,23 @@ namespace SupermarketWEB.Pages.Categories
 {
     public class EditModel : PageModel
     {
-		private readonly SupermarketContext _context;
+        private readonly SupermarketContext _context;
 
-        public EditModel(SupermarketContext context) 
+        public EditModel(SupermarketContext context)
         {
-			_context = context;
-		}
-		[BindProperty]
-		public Category Category { get; set; } = default!;
-		public async Task<IActionResult> OnGetAsync(int? id) 
-		{
-			if (id == null || _context.Categories == null) 
-			{
-				return NotFound();
-			}
-			var category = await _context.Categories.FirstOrDefaultAsync(m => m.Id == id);
-			if (category == null) 
-			{
+            _context = context;
+        }
+        [BindProperty]
+        public Category Category { get; set; } = default!;
+        public async Task<IActionResult> OnGetAsync(int? id)
+        {
+            if (id == null || _context.Categories == null)
+            {
+                return NotFound();
+            }
+            var category = await _context.Categories.FirstOrDefaultAsync(m => m.Id == id);
+            if (category == null)
+            {
 				return NotFound();
 			}
 			Category = category;
