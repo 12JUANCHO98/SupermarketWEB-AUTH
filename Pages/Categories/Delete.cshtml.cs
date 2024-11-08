@@ -12,20 +12,20 @@ namespace SupermarketWEB.Pages.Categories
 
         public DeleteModel(SupermarketContext context) {
 
-            _context = context;
-        }
-        [BindProperty]
+			_context = context;
+		}
+		[BindProperty]
 
-        public Category Category { get; set; } = default!;
+		public Category Category { get; set; } = default!;
 
-        public async Task<IActionResult> OnGetAsync(int? id) 
-        {
-            if (id == null || _context.Categories == null) 
-            { 
-                return NotFound();
-            
-            }
-            var category= await _context.Categories.FirstOrDefaultAsync(m => m.Id == id);
+		public async Task<IActionResult> OnGetAsync(int? id)
+		{
+			if (id == null || _context.Categories == null)
+			{
+				return NotFound();
+
+			}
+			var category = await _context.Categories.FirstOrDefaultAsync(m => m.Id == id);
 
             if (category == null)
             {
