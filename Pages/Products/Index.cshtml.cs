@@ -7,9 +7,9 @@ using SupermarketWEB.Models;
 
 namespace SupermarketWEB.Pages.Products
 {
-    [Authorize]
-    public class IndexModel : PageModel
-    {
+	[Authorize]
+	public class IndexModel : PageModel
+	{
 		private readonly SupermarketContext _context;
 
 		public IndexModel(SupermarketContext context)
