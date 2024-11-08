@@ -16,12 +16,12 @@ namespace SupermarketWEB.Pages.Categories
 
         }
 
-        public IActionResult OnGet()
-        {
-            return Page();
-        }
+		public IActionResult OnGet()
+		{
+			return Page();
+		}
 
-        [BindProperty]
+		[BindProperty]
         public Category Category { get; set; } = default!;
 
         public async Task<IActionResult> OnPostAsync() 
