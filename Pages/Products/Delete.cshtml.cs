@@ -52,7 +52,7 @@ namespace SupermarketWEB.Pages.Products
 				Product = product;
 				_context.Products.Remove(Product);
 				await _context.SaveChangesAsync();
-
+				{ }
 			}
 			return RedirectToPage("./Index");
 		}
