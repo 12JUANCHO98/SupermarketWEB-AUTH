@@ -22,9 +22,9 @@ namespace SupermarketWEB.Pages.Providers
         {
             if (_context.Providers != null)
             {
-                Providers = await _context.Providers.ToListAsync();
+				Providers = await _context.Providers.ToListAsync();
 
-            }
+			}
         }
     }
 }

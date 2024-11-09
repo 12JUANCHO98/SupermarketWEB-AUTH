@@ -7,6 +7,6 @@
 
         public string? Description { get; set; }
 		public int ProductId { get; set; }
-		public Product? Product { get; set; } = default!;
+        public Product? Product { get; set; } = default!;
     }
 }
