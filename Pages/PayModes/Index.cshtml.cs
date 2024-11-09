@@ -7,9 +7,9 @@ using SupermarketWEB.Models;
 
 namespace SupermarketWEB.Pages.PayModes
 {
-    [Authorize]
-    public class IndexModel : PageModel
-    {
+	[Authorize]
+	public class IndexModel : PageModel
+	{
 		private readonly SupermarketContext _context;
 
 		public IndexModel(SupermarketContext context)
@@ -30,5 +30,5 @@ namespace SupermarketWEB.Pages.PayModes
 
 	}
 
-    }
+}
 
