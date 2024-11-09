@@ -18,7 +18,7 @@ namespace SupermarketWEB.Pages.Providers
 		[BindProperty]
 
 		public Provider Provider { get; set; } = default!;
-
+		
 		public async Task<IActionResult> OnGetAsync(int? id)
 		{
 			if (id == null || _context.Providers == null)
