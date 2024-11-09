@@ -5,20 +5,21 @@ using SupermarketWEB.Models;
 
 namespace SupermarketWEB.Pages.Providers
 {
-    public class CreateModel : PageModel
-    {
+	public class CreateModel : PageModel
+	{
 		private readonly SupermarketContext _context;
 		public CreateModel(SupermarketContext context)
 		{
 
 			_context = context;
-
+			{ }
 		}
 
 		public IActionResult OnGet()
 		{
 			return Page();
 		}
+		
 
 		[BindProperty]
 		public Provider Provider { get; set; } = default!;
@@ -36,3 +37,4 @@ namespace SupermarketWEB.Pages.Providers
 		}
 	}
 }
+
