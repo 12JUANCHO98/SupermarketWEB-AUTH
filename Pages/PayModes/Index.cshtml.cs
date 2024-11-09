@@ -12,23 +12,23 @@ namespace SupermarketWEB.Pages.PayModes
 	{
 		private readonly SupermarketContext _context;
 
-		public IndexModel(SupermarketContext context)
-		{
-			_context = context;
-		}
+        public IndexModel(SupermarketContext context)
+        {
+            _context = context;
+        }
 
-		public IList<PayMode> PayModes { get; set; } = default!;
-		public async Task OnGetAsync()
-		{
-			if (_context.payModes != null)
-			{
-				PayModes = await _context.payModes.ToListAsync();
+        public IList<PayMode> PayModes { get; set; } = default!;
+        public async Task OnGetAsync()
+        {
+            if (_context.payModes != null)
+            {
+                PayModes = await _context.payModes.ToListAsync();
 
-			}
-		}
+            }
+        }
 
 
-	}
+    }
 
 }
 
