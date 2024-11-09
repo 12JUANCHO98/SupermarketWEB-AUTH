@@ -29,6 +29,5 @@ namespace SupermarketWEB.Pages.PayModes
 
 
     }
-
 }
 

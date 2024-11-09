@@ -7,8 +7,8 @@ using SupermarketWEB.Models;
 
 namespace SupermarketWEB.Pages.Providers
 {
-    [Authorize]
-    public class IndexModel : PageModel
+	[Authorize]
+	public class IndexModel : PageModel
     {
         private readonly SupermarketContext _context;
 
