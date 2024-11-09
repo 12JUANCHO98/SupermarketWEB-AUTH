@@ -18,12 +18,12 @@ namespace SupermarketWEB
             builder.Services.AddAuthentication().AddCookie("MyCookieAuth", options =>
             {
 
-                options.Cookie.Name = "MyCookieAuth";
+				options.Cookie.Name = "MyCookieAuth";
 				options.LoginPath = "/Account/Login";
 
 			});
 
-            var app = builder.Build();
+			var app = builder.Build();
 
 			// Configure the HTTP request pipeline.
 			if (!app.Environment.IsDevelopment())
