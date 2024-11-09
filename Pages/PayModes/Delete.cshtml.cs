@@ -12,7 +12,7 @@ namespace SupermarketWEB.Pages.PayModes
 
 		public DeleteModel(SupermarketContext context)
 		{
-			{ }
+			
 			_context = context;
 		}
 		[BindProperty]
