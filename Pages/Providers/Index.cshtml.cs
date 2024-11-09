@@ -21,7 +21,7 @@ namespace SupermarketWEB.Pages.Providers
         public async Task OnGetAsync()
         {
             if (_context.Providers != null)
-            {
+			{
 				Providers = await _context.Providers.ToListAsync();
 
 			}
